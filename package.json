@@ -1,8 +1,8 @@
 {
-  "name": "@stencil/starter",
+  "name": "shop-stencil",
   "private": true,
   "version": "0.0.1",
-  "description": "Stencil Starter App",
+  "description": "Learning Stencil",
   "files": [
     "dist"
   ],
@@ -22,12 +22,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-starter.git"
-  },
-  "author": "Ionic Team",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
-  },
-  "homepage": "https://github.com/ionic-team/stencil"
+    "url": "git+https://github.com/peterblazejewicz/shop-stencil.git"
+  }
 }
