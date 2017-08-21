@@ -9,9 +9,9 @@ export class ShopApp {
 
   render() {
     return (
-      <p>
-        SHOPA
-      </p>
+      <app-header>
+        <app-toolbar></app-toolbar>
+      </app-header>
     );
   }
 }

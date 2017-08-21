@@ -1,6 +1,6 @@
 exports.config = {
   bundles: [
-    { components: ['shop-app'] }
+    { components: ['shop-app', 'app-header', 'app-toolbar'] }
   ],
   collections: [
     { name: '@stencil/router' }
