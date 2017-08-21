@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Stencil Starter App</title>
+  <title>Shop Stencil</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', 'Noto Sans', sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    /* styling for render while resources are loading */
+    shop-app[unresolved] {
+      display: block;
+      min-height: 101vh;
+      line-height: 68px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      color: #202020;
+      padding: 0 16px;
+      overflow: visible;
+    }
+  </style>
   <script src="build/app.js"></script>
 </head>
 <body>
-
-  <my-name first="Stencil" last="JS"></my-name>
-
+  <shop-app unresolved></shop-app>
 </body>
 </html>

@@ -1,0 +1,15 @@
+shop-app {
+    display: block;
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 64px;
+    min-height: 100vh;
+    --app-primary-color: #202020;
+    --app-secondary-color: #757575;
+    --app-accent-color: #172C50;
+    --paper-button-ink-color: var(--app-accent-color);
+    --paper-icon-button-ink-color: var(--app-accent-color);
+    --paper-spinner-color: var(--app-accent-color);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: var(--app-primary-color);
+}
