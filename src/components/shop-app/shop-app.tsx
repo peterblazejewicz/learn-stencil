@@ -16,9 +16,10 @@ export class ShopApp {
 
   render() {
     return (
-      <app-header>
-        <app-toolbar></app-toolbar>
-      </app-header>
+        [<app-header>
+            <app-toolbar></app-toolbar>
+        </app-header>,
+        <shop-analytics key="UA-39334307-16"></shop-analytics>]
     );
   }
 }
