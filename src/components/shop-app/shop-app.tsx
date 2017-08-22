@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { Component, Element } from '@stencil/core';
 
 
 @Component({
@@ -6,6 +6,13 @@ import { Component } from '@stencil/core';
   styleUrl: 'shop-app.scss'
 })
 export class ShopApp {
+
+  @Element()
+  element: HTMLElement
+
+  componentDidLoad() {
+    this.element.removeAttribute("unresolved");
+  }
 
   render() {
     return (
