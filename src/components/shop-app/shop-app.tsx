@@ -1,4 +1,6 @@
 import { Component, Element } from "@stencil/core";
+import { ShopCategoryData } from '../shop-category-data/shop-category-data';
+
 
 @Component({
   tag: "shop-app",
@@ -22,6 +24,7 @@ export class ShopApp {
           exact={true}
         />
       </stencil-router>,
+      <shop-category-data></shop-category-data>,
       <app-header>
         <app-toolbar />
       </app-header>
