@@ -18,7 +18,8 @@
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest"
+    "@stencil/utils": "latest",
+    "sass-lint": "^1.10.2"
   },
   "repository": {
     "type": "git",
