@@ -7,7 +7,32 @@ app-toolbar {
     padding: 0 16px;
     pointer-events: none;
     font-size: 20px;
-}
-app-toolbar > * {
-    flex: auto;
+
+    > * {
+        flex-basis: 1;
+    }
+
+    .left-bar-item {
+        flex-basis: 40px;
+    }
+
+    .logo {
+        flex-grow: 1;
+        text-align: center;
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            color: var(--app-primary-color);
+            text-decoration: none;
+            /* required for IE 11, so this <a> can receive pointer events */
+            display: inline-block;
+            pointer-events: auto;
+        }
+    }
+
+    .cart-btn-container {
+        position: relative;
+        flex-basis: 40px;
+      }
 }

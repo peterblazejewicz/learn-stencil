@@ -11,7 +11,9 @@ export class AppToolbar {
     return (
       [
         <div class="left-bar-item"></div>,
-        <div class="logo">SHOP</div>,
+        <div class="logo">
+            <a href="/" aria-label="SHOP Home">SHOP</a>
+        </div>,
         <div class="cart-btn-container"></div>
       ]
     );
