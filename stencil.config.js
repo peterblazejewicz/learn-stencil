@@ -1,13 +1,11 @@
 exports.config = {
   bundles: [
-    { components: ['shop-app', 'app-header', 'app-toolbar', 'shop-analytics'] }
+    { components: ["shop-app", "app-header", "app-toolbar", "shop-analytics"] }
   ],
-  collections: [
-    { name: '@stencil/router' }
-  ]
+  collections: [{ name: "@stencil/router" }]
 };
 
 exports.devServer = {
-  root: 'www',
-  watchGlob: '**/**'
-}
+  root: "www",
+  watchGlob: "**/**"
+};

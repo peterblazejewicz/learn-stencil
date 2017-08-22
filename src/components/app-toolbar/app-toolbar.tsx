@@ -1,21 +1,19 @@
-import { Component, Prop } from '@stencil/core';
-
+import { Component } from "@stencil/core";
 
 @Component({
-  tag: 'app-toolbar',
-  styleUrl: 'app-toolbar.scss'
+  tag: "app-toolbar",
+  styleUrl: "app-toolbar.scss"
 })
 export class AppToolbar {
-
   render() {
-    return (
-      [
-        <div class="left-bar-item"></div>,
-        <div class="logo">
-            <a href="/" aria-label="SHOP Home">SHOP</a>
-        </div>,
-        <div class="cart-btn-container"></div>
-      ]
-    );
+    return [
+      <div class="left-bar-item" />,
+      <div class="logo">
+        <stencil-route-link router="#router" url="/" aria-label="SHOP Home">
+          SHOP
+        </stencil-route-link>
+      </div>,
+      <div class="cart-btn-container" />
+    ];
   }
 }
