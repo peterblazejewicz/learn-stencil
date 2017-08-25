@@ -4,4 +4,11 @@ mine-sweeper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1.25;
+        margin-bottom: 1.25rem;
+    }
 }

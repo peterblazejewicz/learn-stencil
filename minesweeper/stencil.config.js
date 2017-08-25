@@ -1,6 +1,6 @@
 exports.config = {
   bundles: [
-    { components: ['mine-sweeper'] }
+    { components: ['mine-sweeper', 'game-grid', 'grid-cell'] }
   ],
   collections: [
     { name: '@stencil/router' }
