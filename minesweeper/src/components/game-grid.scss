@@ -3,6 +3,7 @@ game-grid {
     flex-wrap: wrap;
     width: calc(10 * var(--grid-cell-size));
     height: calc(10 * var(--grid-cell-size));
-    border: 1px solid rgba(0,0,0,.2);
+    border: 4px inset var(--grid-cell-border-color);
     box-sizing: content-box;
+    background: var(--grid-cell-background);
 }

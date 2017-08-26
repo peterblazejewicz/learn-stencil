@@ -4,11 +4,16 @@ mine-sweeper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1;
+    background: var(--grid-cell-background);
+    padding: 1rem;
+    margin: auto;
 
     h1 {
         font-size: 3rem;
         line-height: 1.25;
         margin-bottom: 1.25rem;
+        border: 4px inset var(--grid-cell-border-color);
+        width: calc(10 * var(--grid-cell-size));
+        text-align: center;
     }
 }

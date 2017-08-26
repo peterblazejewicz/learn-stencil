@@ -1,4 +1,5 @@
-import { Component, Prop, PropDidChange, PropWillChange } from "@stencil/core";
+import { Component, Prop, Element, State, Method } from '@stencil/core';
+import { IGridCell } from './IGridCelll';
 
 @Component({
   tag: 'game-grid',
@@ -6,18 +7,23 @@ import { Component, Prop, PropDidChange, PropWillChange } from "@stencil/core";
 })
 export class GameGrid {
 
+    @Element() element: HTMLElement;
+
+    @State() cells: IGridCell[] = [];
+
     @Prop() rows: number;
 
     @Prop() cols: number;
 
+    @Method()
+    setCells(cells:IGridCell[]){
+        this.cells = cells;
+    }
+
     render() {
-        const cells = [];
-        for(let row = 0; row < this.rows; row++) {
-            for(let col = 0; col < this.cols; col++) {
-                cells.push(<grid-cell row={row} col={col}></grid-cell>)
-            }
-        }
-        return (cells)
+        return (
+            this.cells.map(cell => <grid-cell cell={cell}></grid-cell>)
+        )
     }
 
 }

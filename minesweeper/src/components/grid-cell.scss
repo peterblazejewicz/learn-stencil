@@ -4,6 +4,9 @@ grid-cell {
     justify-content: center;
     width: calc(var(--grid-cell-size) * 1);
     height: calc(var(--grid-cell-size) * 1);
-    border: 1px solid rgba(0,0,0,.2);
+    border: 4px outset hsl(0,0%,90%);
     box-sizing: border-box;
+    background: var(--grid-cell-background);
+    font-size: calc(var(--grid-cell-size) * .5);
+    line-height: 1;
 }
